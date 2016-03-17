@@ -28,33 +28,33 @@ Example
       FreeType                 no
       Ghostscript (Library)    no
       JBIG                     no
-      JPEG-2000                yes
+      JPEG-2000                no
       JPEG                     yes
       Little CMS               no
       Loadable Modules         yes
       OpenMP                   yes (201307)
       PNG                      yes
-      TIFF                     yes
+      TIFF                     no
       TRIO                     no
       UMEM                     no
       WebP                     no
       WMF                      no
       X11                      no
-      XML                      yes
+      XML                      no
       ZLIB                     yes
 
-    Host type: x86_64-alpine-linux-musl
+    Host type: x86_64-unknown-linux-gnu
 
     Configured using the command:
-      ./configure  '--build=x86_64-alpine-linux-musl' '--host=x86_64-alpine-linux-musl' '--prefix=/usr' '--sysconfdir=/etc' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--localstatedir=/var' '--enable-shared' '--disable-static' '--with-modules' '--with-threads' '--with-gs-font-dir=/usr/share/fonts/Type1' '--with-quantum-depth=16' 'build_alias=x86_64-alpine-linux-musl' 'host_alias=x86_64-alpine-linux-musl' 'CC=gcc' 'CFLAGS=-Os -fomit-frame-pointer' 'LDFLAGS=-Wl,--as-needed' 'CPPFLAGS=-Os -fomit-frame-pointer' 'CXXFLAGS=-Os -fomit-frame-pointer'
+      ./configure  '--build=' '--host=' '--prefix=/usr' '--sysconfdir=/etc' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--localstatedir=/var' '--enable-shared' '--disable-static' '--with-modules' '--with-threads' '--with-gs-font-dir=/usr/share/fonts/Type1' '--with-quantum-depth=16' 'build_alias=' 'host_alias='
 
     Final Build Parameters:
       CC       = gcc
-      CFLAGS   = -fopenmp -Os -fomit-frame-pointer -Wall
-      CPPFLAGS = -Os -fomit-frame-pointer -I/usr/include/libxml2
-      CXX      = x86_64-alpine-linux-musl-g++
-      CXXFLAGS = -Os -fomit-frame-pointer
-      LDFLAGS  = -Wl,--as-needed
+      CFLAGS   = -fopenmp -g -O2 -Wall
+      CPPFLAGS =
+      CXX      = g++
+      CXXFLAGS =
+      LDFLAGS  =
       LIBS     = -lz -lltdl -lm -lgomp -lpthread
 
     $ docker run rafakato/alpine-node-media ffmpeg -version

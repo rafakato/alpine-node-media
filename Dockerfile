@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:latest
+FROM mhart/alpine-node:6
 MAINTAINER Rafael Kato "rafael@kato.io"
 
 ENV PKGNAME=graphicsmagick

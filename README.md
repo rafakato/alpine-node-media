@@ -1,7 +1,7 @@
 alpine-node-media
 ---------------------------------------------------------
 
-This container is built using rafakato/alpine-node as base and adding ffmpeg and GraphicsMagick packages
+This container is built using [mhart/alpine-node:6](https://hub.docker.com/r/mhart/alpine-node/) as base and adding ffmpeg and GraphicsMagick packages
 
 Example
 -------

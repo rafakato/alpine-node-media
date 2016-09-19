@@ -1,6 +1,8 @@
 alpine-node-media
 ---------------------------------------------------------
 
+[![](https://images.microbadger.com/badges/image/rafakato/alpine-node-media.svg)](https://microbadger.com/images/rafakato/alpine-node-media "Get your own image badge on microbadger.com")
+
 This container is built using [mhart/alpine-node:6](https://hub.docker.com/r/mhart/alpine-node/) as base and adding ffmpeg and GraphicsMagick packages
 
 Example
